@@ -1,33 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Document</title>
-
-    <!--<script src="EmployeeWorkHoursCalculatorFormBased.js" ></script>-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Employee Work Hours Calculator</title>
 </head>
 <body>
-    <header>
-        <h1>Employee Work Hours Calculator</h1>
-    </header>
-
-    <section>
-                <form id="employeeForm">
-                <label for="employeeName">Employee Name:</label>
+ <form id="employeeForm" onsubmit="return calculateWorkHours(event)">
+                <label for="employeeName" placeholder="hello">Employee Name:</label>
                 <input type="text" id="employeeName" required><br><br>
 
-                <label for="workHours">Work Hours:</label>
-                <input type="number" id="workHours" required><br><br>
+                <label for="workHours">Clock In:</label>
+                <input type="time" id="workHours" required><br><br>
 
-                <label for="hourlyRate">Hourly Rate:</label>
-                <input type="number" id="hourlyRate" required><br><br>
+                <label for="hourlyRate">Clock Out:</label>
+                <input type="time" id="hourlyRate" required><br><br>
 
                 <button type="submit">Calculate</button>
-            </form>
-    </section>
 
 
-    
+                
 </body>
 </html>
